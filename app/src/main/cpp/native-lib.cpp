@@ -1,0 +1,12 @@
+#include <jni.h>
+#include <string>
+
+extern "C"
+jstring Java_www_jin_com_jin_1text_MainActivity_stringFromJNI(
+        JNIEnv *env, jobject /* this */) {
+
+    std::string hello = "Hello from C++";
+
+    return env->NewStringUTF(hello.c_str());
+
+}
