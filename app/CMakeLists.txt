@@ -24,10 +24,10 @@ add_library( # Sets the name of the library.
             text  # 生成的.so库文件名称
 
             # Sets the library as a shared library.
-            SHARED
-
+            #SHARED #动态库
+            STATIC #静态库
             # Provides a relative path to your source file(s).
-            # Associated headers in the same location as their source
+            # Associated headers in the same location as their source ,k
             # file are automatically included.
             # 需要生成的.so库的文件路径
             src/main/cpp/text.cpp

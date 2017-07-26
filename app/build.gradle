@@ -20,6 +20,7 @@ android {
                 abiFilters "armeabi-v7a", "armeabi","x86"
             }
         }
+
         /*ndk {
             //定义生成的mk文件中的model名称
             moduleName "text"
